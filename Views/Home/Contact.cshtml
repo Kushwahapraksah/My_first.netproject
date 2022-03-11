@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<h1>
+    @Session["name"]
+
+</h1>
+<ol>
+    @foreach (object a in (List<string>)Session["country"])
+    {
+        <li>@a</li>
+    }
+</ol>
